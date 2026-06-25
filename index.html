@@ -1,16 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nisha Sahota's Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nisha Sahota — UI/UX Designer</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 class="header1">hi, my name is</h1>
-        <h1>NIISHA SAHOTA</h1>
-    </header>
 
-    
+  <canvas id="gradient-canvas"></canvas>
+
+  <nav class="navbar">
+    <div class="logo">NISHA SAHOTA</div>
+    <div class="nav-links">
+      <div class="dropdown">
+        <button class="dropdown-toggle">work</button>
+        <div class="dropdown-menu">
+          <a href="wizly.html">Wizly</a>
+          <a href="home-instead.html">Home Instead Rebranding</a>
+          <a href="capstone.html">DES-157B Capstone</a>
+        </div>
+      </div>
+      <a href="about.html">about me</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <h1 class="fade-in"><span class="hero-line">Hi, I'm</span><span class="hero-name">NISHA SAHOTA.</span></h1>
+    <p class="subtitle fade-in">UI/UX designer.</p>
+  </header>
+
+  <main class="project-list">
+    <a href="wizly.html" class="project-card fade-in" aria-label="Wizly project"></a>
+    <a href="home-instead.html" class="project-card fade-in" aria-label="Home Instead Rebranding project"></a>
+    <a href="capstone.html" class="project-card fade-in" aria-label="DES-157B Capstone project"></a>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/granim@2.0.0/dist/granim.min.js"></script>
+  <script src="script.js"></script>
+
 </body>
 </html>
