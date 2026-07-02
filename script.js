@@ -53,4 +53,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ---------- Scroll hint fade out on scroll ----------
+  const scrollHint = document.querySelector('.scroll-hint');
+  if (scrollHint) {
+    window.addEventListener('scroll', () => {
+      const opacity = Math.max(0, 1 - window.scrollY / 80);
+      scrollHint.style.animation = 'none';
+      scrollHint.style.opacity = opacity;
+      scrollHint.style.pointerEvents = opacity === 0 ? 'none' : 'auto';
+    }, { passive: true });
+  }
+
 });
